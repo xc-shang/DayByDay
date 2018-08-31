@@ -16,3 +16,7 @@ following the 2nd answer from [@Alesson] in ['cannot find or open the pdb file' 
 ](https://stackoverflow.com/questions/28381361/cannot-find-or-open-the-pdb-file-visual-studio-c-2013)
 
 	Try go to Tools->Options->Debugging->Symbols and select checkbox "Microsoft Symbol Servers", Visual Studio will download PDBs automatically.
+
+:collision: Default project property -> linker -> system -> subsystem is not set, and all the outputs of cout and printf function are redirect to the opened window "Microsoft Visual Studio Debug Console" (the name is showing after the running is finished, and before that its name is your project path in hard drive.) when you "start without debugging"
+
+	The 2nd answer of [Printf is not printing anything to output? C++ SDL](https://stackoverflow.com/questions/11068565/printf-is-not-printing-anything-to-output-c-sdl) makes me observe the printed message, since the popopping cvNamedWindow blocked the "console".
