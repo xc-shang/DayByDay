@@ -7,7 +7,7 @@
 
 :collision: if you change the system environment variable, you need to log out windows and log in to reload the changed environment variable.
 
-:collision: using high version visual studio compile and debug project created with lower veresion visual studio, you may meet:
+:collision: using high version visual studio compile and debug project created with lower veresion visual studio, you may meet the following [warning]:
 
 	'xxxxx.exe' (Win32): Loaded 'C:\Windows\System32\ntdll.dll'. Cannot find or open the PDB file.
 	'xxxxx.exe' (Win32): Loaded 'C:\Windows\System32\KernelBase.dll'. Cannot find or open the PDB file.
@@ -20,3 +20,7 @@ following the 2nd answer from [@Alesson] in ['cannot find or open the pdb file' 
 :collision: Default project property -> linker -> system -> subsystem is not set, and all the outputs of cout and printf function are redirect to the opened window "Microsoft Visual Studio Debug Console" (the name is showing after the running is finished, and before that its name is your project path in hard drive.) when you "start without debugging"
 
 	The 2nd answer of [Printf is not printing anything to output? C++ SDL](https://stackoverflow.com/questions/11068565/printf-is-not-printing-anything-to-output-c-sdl) makes me observe the printed message, since the popopping cvNamedWindow blocked the "console".
+
+:collision: Any external compile? [error] comes from .obj file should provide some useful error information.
+
+:collision: "printf is ambiguous" [error] could comes from missing one "}".
