@@ -11,3 +11,7 @@ Some problems and correspond way of solving.
  	File -> Invalidate Caches / Restart
 
  	cache files would not deleted until the app restarts.
+    
+:exclamation: Ubuntu sorts file name in the following order:
+
+    img1 -> img10 -> img2
