@@ -31,4 +31,4 @@
 
 :collision: the Keras-contrib dependency has compatible issue. Modifying a couple of lines in [keras_contrib/layers/convolutional.py](https://github.com/beeva-hectoraguado/keras-contrib/commit/7de78939ca70d726d2cff7119cd781981e459787)
 
-:collision: some issues about [#9621] and install keras==2.1.3 with cuda7.0, tensorflow==1.3.0
+:collision: some issues about [#9621](https://github.com/keras-team/keras/issues/9621) and install keras==2.1.3 with cuda7.0, tensorflow==1.3.0
