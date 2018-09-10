@@ -28,3 +28,7 @@
 	[pip install --user --no-index --find-links=/path/to/downloads Keras-2.1.6-py2.pu3-none-any.whl]
 	[pip install --user --no-index --find-links=/path/to/downloads Keras_Preprocessing-1.0.2.tar.gz]
 	[pip install --user --no-index --find-links=/path/to/downloads Keras_Applications-1.0.4-py2.py3-none-any.tar.gz]
+
+:collision: the Keras-contrib dependency has compatible issue. Modifying a couple of lines in [keras_contrib/layers/convolutional.py](https://github.com/beeva-hectoraguado/keras-contrib/commit/7de78939ca70d726d2cff7119cd781981e459787)
+
+:collision: some issues about [#9621] and install keras==2.1.3 with cuda7.0, tensorflow==1.3.0
