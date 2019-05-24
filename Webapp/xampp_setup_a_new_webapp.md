@@ -16,7 +16,7 @@
     </VirtualHost>
 
 1.There shouldn't have server name after '<VirtualHost', while this won't cause a error in xampp.
-2.As above codes have given CustomLog and ErrorLog absolut path, so we need create the log folder and .log file arifically on our disk.
+2.As above codes have given CustomLog and ErrorLog absolut path, so we need create the log folder and .log file arificially on our disk.
 So, the above codes work just fine.
 
 :collision: At the last, the blog instructs us to insert VirtualHost defined in above codes. Since Windows 10 file system doesn't allow you edit our hosts file, so us can copy and modify hosts file and replace the original.
