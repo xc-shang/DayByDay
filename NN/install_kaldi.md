@@ -20,3 +20,9 @@
 :collision: python2.7 is not the default python version.
 
     [alias python=python2.7] create the symlink to python2.7
+
+
+:collision: cannot open shared file libmkl_intel_lp64.so.2
+
+    that is because the new intel one api mkl library has different installation structure, we can fix this error by config the [${kaldi_ROOT}/src/configure] file by 
+    [--mkl-root=${MKLROOT}/lib/intel64/libmkl_intel_lp64.so.1]
