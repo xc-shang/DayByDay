@@ -1,0 +1,29 @@
+1.创建docker镜像
+sudo docker run --runtime=nvidia -it -v /data1/c405_xxx:/root/project -p 60xx:22 -p 60xx:8888 -p 60xx:8889 --ipc=host --name c405_xxx -d da58
+
+2.进入dockers镜像
+sudo docker exec -it c405_xxx bash
+
+3.更新apt、安装ssh
+apt update
+apt install openssh-server
+
+4.修改ssh设置，允许以root登录
+vi /etc/ssh/sshd_config
+   找到(#PermitRootLogin)，将'no'改为'yes'，并删除'#'取消注释
+
+5.重启ssh服务，打开ssh系统服务，修改root账号密码，
+service ssh restart
+systemctl enable ssh
+paswd
+
+
+6.打开jupyter
+jupyter
+（根据网上教程，可继续修改jupyter密码）
+
+账号信息：
+ssh:（22端口）
+ ssh -p 60xx root@172.28.6.25 密码 xxxxxx
+jupyter server:（8888端口）
+ http://172.28.6.25:60xx/lab 密码 xxxxxx

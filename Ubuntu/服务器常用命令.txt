@@ -1,0 +1,17 @@
+查看进程开始时间：
+ps -eo pid,lstart,cmd
+
+查看docker资源占用情况：
+sudo docker stats
+
+查看进程资源占用情况：
+top
+
+查看系统登陆历史：
+last
+
+查看docker端口号等信息：
+docker ps
+
+查看ssh历史访问信息：
+vi /var/log/auth.log
