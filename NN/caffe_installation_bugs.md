@@ -7,7 +7,7 @@
     LMDB issues:
     opencv_imgcodecs opencv_videoio issues:
 
->SOLVE : [Commonly-encountered-build-issues](https://github.com/BVLC/caffe/wiki/Commonly-encountered-build-issues)
+> SOLVE : [Commonly-encountered-build-issues](https://github.com/BVLC/caffe/wiki/Commonly-encountered-build-issues)
 
 :collision: 
 
