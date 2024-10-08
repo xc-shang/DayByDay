@@ -9,8 +9,11 @@
     cp /usr/lib/python-[version]/lib-dynload/ have the file _bz2.xxxx.so /usr/local/lib/python-[version]/lib-dynload/_bz2.xxxx.so
 
 4. :collision: create python virtual environment from recompiled python, but still report 'no module named _sqlite3'
-    watch the error message, the venv ref /usr/local/bin/python-[version], but /usr/lib/python-[version]/lib-dynload/ have the file _sqlite3.cpython-xx-x86_64-linux-gnu.so
+   
+    :sparkles:watch the error message, the venv ref /usr/local/bin/python-[version], but /usr/lib/python-[version]/lib-dynload/ have the file _sqlite3.cpython-xx-x86_64-linux-gnu.so
 
     solution:
     
     cp /usr/lib/python-[version]/lib-dynload/ have the file _sqlite3.xxxx.so /usr/local/lib/python-[version]/lib-dynload/_sqlite3.xxxx.so
+
+    :sparkles:follow this blog [python3.10 No module named '_sqlite3](https://blog.51cto.com/u_16213333/7167580)
